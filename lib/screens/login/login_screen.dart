@@ -1,5 +1,8 @@
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:instagram_clone/screens/bottom_nav/bottom_nav_screen.dart';
+import 'package:instagram_clone/screens/sign_up/sign_up_screen.dart';
 import 'package:instagram_clone/widgets/ui_helper.dart';
 
 class LoginScreen extends StatefulWidget {
@@ -10,8 +13,8 @@ class LoginScreen extends StatefulWidget {
 }
 
 class _LoginScreenState extends State<LoginScreen> {
-  TextEditingController _emailTEController = TextEditingController();
-  TextEditingController _passwordTEController = TextEditingController();
+  final TextEditingController _emailTEController = TextEditingController();
+  final TextEditingController _passwordTEController = TextEditingController();
 
   @override
   Widget build(BuildContext context) {
@@ -47,18 +50,19 @@ class _LoginScreenState extends State<LoginScreen> {
                 ),
               ],
             ),
-            UiHelper.CusomButton(text: 'Log in', callback: (){}),
+            UiHelper.CusomButton(text: 'Log in', callback: (){
+              Get.off(BottomNavScreen());
+            }),
             SizedBox(height: 10,),
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 UiHelper.CustomImage(imageUrl: 'facebook_icon.png'),
-                UiHelper.CustomTextButton(text: 'Log in with Facebook', callBack: (){})
+                UiHelper.CustomTextButton(text: 'Log in with Facebook', callBack: (){
+                })
               ],
             ),
-            SizedBox(height: 10,),
             Text('OR',style: TextStyle(color: Colors.white,fontWeight: FontWeight.w600,),),
-            SizedBox(height: 10,),
             RichText(
               text: TextSpan(
                 text: 'Don’t have an account? ',
@@ -69,6 +73,7 @@ class _LoginScreenState extends State<LoginScreen> {
                     style: TextStyle(color: Colors.blue,fontSize: 14, fontWeight: FontWeight.w400),
                     recognizer: TapGestureRecognizer()
                       ..onTap = () {
+                        Get.to(SignUpScreen());
                       },
                   ),
                 ],
@@ -81,3 +86,4 @@ class _LoginScreenState extends State<LoginScreen> {
     );
   }
 }
+
