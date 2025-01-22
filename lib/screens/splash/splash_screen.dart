@@ -8,9 +8,12 @@ import 'package:instagram_clone/widgets/ui_helper.dart';
 class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});
 
+  static const name ='/';
+
   @override
   State<SplashScreen> createState() => _SplashScreenState();
 }
+
 
 class _SplashScreenState extends State<SplashScreen> {
   @override

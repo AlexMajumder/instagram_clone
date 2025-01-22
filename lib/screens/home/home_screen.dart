@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:instagram_clone/common/widgets/post_widget.dart';
 import 'package:instagram_clone/screens/home/widgets/story_widget.dart';
+import 'package:instagram_clone/screens/massages/message_screen.dart';
 import 'package:instagram_clone/widgets/ui_helper.dart';
 
 import '../../common/data/resorce.dart';
@@ -30,7 +32,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 onPressed: () {},
                 icon: UiHelper.CustomImage(imageUrl: 'igtv_home.png')),
             IconButton(
-                onPressed: () {},
+                onPressed: _goToMessage,
                 icon: UiHelper.CustomImage(imageUrl: 'messenger.png'))
           ],
         ),
@@ -66,4 +68,9 @@ class _HomeScreenState extends State<HomeScreen> {
           ],
         ));
   }
+
+  void _goToMessage(){
+    Get.toNamed(MessageScreen.name);
+  }
+
 }

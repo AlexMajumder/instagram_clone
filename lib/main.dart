@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:instagram_clone/screens/massages/message_screen.dart';
 import 'package:instagram_clone/screens/splash/splash_screen.dart';
 
 void main() {
@@ -14,9 +15,12 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return GetMaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Inastagram',
+      title: 'Instagram',
       theme: ThemeData.dark(),
-      home: SplashScreen(),
+      initialRoute: SplashScreen.name,
+      routes: {
+        MessageScreen.name: (context) => MessageScreen(),
+      },
     );
   }
 }

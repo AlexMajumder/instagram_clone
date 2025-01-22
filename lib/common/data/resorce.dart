@@ -149,5 +149,114 @@ class Resource {
     },
   ];
 
+  List<Map<String, dynamic>> messageData = [
+    {
+      'profileImg': 'https://randomuser.me/api/portraits/men/1.jpg',
+      'name': 'John Doe',
+      'message': 'Hey, how have you been?',
+      'time': '2m',
+      'img': 'https://plus.unsplash.com/premium_photo-1664474619075-644dd191935f?fm=jpg&q=60&w=3000',
+    },
+    {
+      'profileImg': 'https://randomuser.me/api/portraits/women/2.jpg',
+      'name': 'Jane Smith',
+      'message': 'Let’s meet up tomorrow!',
+      'time': '1h',
+      'img': 'https://letsenhance.io/static/8f5e523ee6b2479e26ecc91b9c25261e/1015f/MainAfter.jpg',
+    },
+    {
+      'profileImg': 'https://randomuser.me/api/portraits/men/3.jpg',
+      'name': 'Robert Brown',
+      'message': 'Don’t forget our meeting.',
+      'time': 'now',
+      'img': 'https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?w=3000',
+    },
+    {
+      'profileImg': 'https://randomuser.me/api/portraits/women/4.jpg',
+      'name': 'Emily Davis',
+      'message': 'Check out this cool picture!',
+      'time': '15m',
+      'img': 'https://images.unsplash.com/photo-1517816743773-6e0fd518b4a6?w=3000',
+    },
+    {
+      'profileImg': 'https://randomuser.me/api/portraits/men/5.jpg',
+      'name': 'Michael Scott',
+      'message': 'That sounds great!',
+      'time': '30m',
+      'img': 'https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?w=3000',
+    },
+    {
+      'profileImg': 'https://randomuser.me/api/portraits/women/6.jpg',
+      'name': 'Laura Wilson',
+      'message': 'Happy Birthday!',
+      'time': '2h',
+      'img': 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=3000',
+    },
+    {
+      'profileImg': 'https://randomuser.me/api/portraits/men/7.jpg',
+      'name': 'David Johnson',
+      'message': 'Let me know when you’re free.',
+      'time': '4h',
+      'img': 'https://images.unsplash.com/photo-1504198453319-5ce911bafcde?w=3000',
+    },
+    {
+      'profileImg': 'https://randomuser.me/api/portraits/women/8.jpg',
+      'name': 'Sophia Garcia',
+      'message': 'I loved your post!',
+      'time': '8h',
+      'img': 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=3000',
+    },
+    {
+      'profileImg': 'https://randomuser.me/api/portraits/men/9.jpg',
+      'name': 'James Martinez',
+      'message': 'Can you share the details?',
+      'time': '1d',
+      'img': 'https://images.unsplash.com/photo-1504198453319-5ce911bafcde?w=3000',
+    },
+    {
+      'profileImg': 'https://randomuser.me/api/portraits/women/10.jpg',
+      'name': 'Isabella Rodriguez',
+      'message': 'Good morning!',
+      'time': '3d',
+      'img': 'https://images.unsplash.com/photo-1527203568253-2a667d3ab869?w=3000',
+    },
+    {
+      'profileImg': 'https://randomuser.me/api/portraits/men/11.jpg',
+      'name': 'Matthew Lewis',
+      'message': 'Nice to meet you!',
+      'time': '5d',
+      'img': 'https://images.unsplash.com/photo-1516542076529-1ea3854896f4?w=3000',
+    },
+    {
+      'profileImg': 'https://randomuser.me/api/portraits/women/12.jpg',
+      'name': 'Olivia Walker',
+      'message': 'Let’s catch up soon.',
+      'time': '1w',
+      'img': 'https://images.unsplash.com/photo-1475823678248-624fc6f85785?w=3000',
+    },
+    {
+      'profileImg': 'https://randomuser.me/api/portraits/men/13.jpg',
+      'name': 'Daniel Harris',
+      'message': 'What’s the update?',
+      'time': '2w',
+      'img': 'https://images.unsplash.com/photo-1485126346959-94fdacb8244b?w=3000',
+    },
+    {
+      'profileImg': 'https://randomuser.me/api/portraits/women/14.jpg',
+      'name': 'Ava Clark',
+      'message': 'It was a great event!',
+      'time': '3w',
+      'img': 'https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?w=3000',
+    },
+    {
+      'profileImg': 'https://randomuser.me/api/portraits/men/15.jpg',
+      'name': 'William Lopez',
+      'message': 'Thanks for the help!',
+      'time': '1mo',
+      'img': 'https://images.unsplash.com/photo-1483356256510-1b8a1ea50c3b?w=3000',
+    },
+  ];
+
+
 
 }

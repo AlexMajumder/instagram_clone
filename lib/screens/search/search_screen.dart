@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:instagram_clone/common/data/resorce.dart';
 import 'package:instagram_clone/widgets/ui_helper.dart';
 
+import '../../common/widgets/search_box_widget.dart';
+
 class SearchScreen extends StatefulWidget {
   const SearchScreen({super.key});
 
@@ -29,26 +31,7 @@ class _SearchScreenState extends State<SearchScreen> {
             SizedBox(
               width: 8,
             ),
-            Container(
-              height: 36,
-              width: 320,
-              decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(10),
-                  color: Color(0XFF262626)),
-              child: TextField(
-                controller: _searchTEController,
-                decoration: InputDecoration(
-                    hintText: 'Search',
-                    prefixIcon:
-                        UiHelper.CustomImage(imageUrl: 'icons/search_icon.png'),
-                    hintStyle: TextStyle(
-                      fontSize: 16,
-                      fontWeight: FontWeight.w400,
-                      color: Color(0XFF8E8E93),
-                    ),
-                    border: InputBorder.none),
-              ),
-            ),
+            SearchBoxWidget(controller: _searchTEController,),
             UiHelper.CustomImage(imageUrl: 'live.png')
           ],
         ),
