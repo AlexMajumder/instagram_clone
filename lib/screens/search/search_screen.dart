@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:instagram_clone/common/data/resorce.dart';
 import 'package:instagram_clone/widgets/ui_helper.dart';
 
 class SearchScreen extends StatefulWidget {
@@ -11,52 +12,7 @@ class SearchScreen extends StatefulWidget {
 TextEditingController _searchTEController = TextEditingController();
 
 class _SearchScreenState extends State<SearchScreen> {
-  var arrContent = [
-    {
-      'img':
-          'https://plus.unsplash.com/premium_photo-1664474619075-644dd191935f?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8aW1hZ2V8ZW58MHx8MHx8fDA%3D'
-    },
-    {
-      'img':
-          'https://letsenhance.io/static/8f5e523ee6b2479e26ecc91b9c25261e/1015f/MainAfter.jpg'
-    },
-    {
-      'img':
-          'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtnvAOajH9gS4C30cRF7rD_voaTAKly2Ntaw&s'
-    },
-    {
-      'img':
-          'https://img-cdn.pixlr.com/image-generator/history/65bb506dcb310754719cf81f/ede935de-1138-4f66-8ed7-44bd16efc709/medium.webp'
-    },
-    {
-      'img':
-          'https://cdn.pixabay.com/photo/2023/03/15/20/46/background-7855413_640.jpg'
-    },
-    {
-      'img':
-          'https://miro.medium.com/v2/resize:fit:20864/1*oM1GuZ0oC3_9v1GfKC2Egg.jpeg'
-    },
-    {"img": "https://picsum.photos/200/300?random=1"},
-    {"img": "https://picsum.photos/200/300?random=2"},
-    {"img": "https://picsum.photos/200/300?random=3"},
-    {"img": "https://picsum.photos/200/300?random=4"},
-    {"img": "https://picsum.photos/200/300?random=5"},
-    {"img": "https://picsum.photos/200/300?random=6"},
-    {"img": "https://picsum.photos/200/300?random=7"},
-    {"img": "https://picsum.photos/200/300?random=8"},
-    {"img": "https://picsum.photos/200/300?random=9"},
-    {"img": "https://picsum.photos/200/300?random=10"},
-    {"img": "https://picsum.photos/200/300?random=11"},
-    {"img": "https://picsum.photos/200/300?random=12"},
-    {"img": "https://picsum.photos/200/300?random=13"},
-    {"img": "https://picsum.photos/200/300?random=14"},
-    {"img": "https://picsum.photos/200/300?random=15"},
-    {"img": "https://picsum.photos/200/300?random=16"},
-    {"img": "https://picsum.photos/200/300?random=17"},
-    {"img": "https://picsum.photos/200/300?random=18"},
-    {"img": "https://picsum.photos/200/300?random=19"},
-    {"img": "https://picsum.photos/200/300?random=20"}
-  ];
+  Resource resource = Resource();
 
   @override
   Widget build(BuildContext context) {
@@ -213,7 +169,7 @@ class _SearchScreenState extends State<SearchScreen> {
           child: GridView.builder(
               gridDelegate:
                   SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 3),
-              itemCount: arrContent.length,
+              itemCount: resource.arrContent.length,
               itemBuilder: (context, index) {
                 return Container(
                   clipBehavior: Clip.antiAlias,
@@ -221,7 +177,7 @@ class _SearchScreenState extends State<SearchScreen> {
                   width: 124,
                   decoration: BoxDecoration(),
                   child: Image.network(
-                    arrContent[index]['img'].toString(),
+                    resource.arrContent[index]['img'].toString(),
                     fit: BoxFit.cover,
                   ),
                 );
